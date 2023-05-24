@@ -1,0 +1,109 @@
+<h1>Dummy Game Page</h1>
+
+<div id="gamepg">
+  <div class="grid-container">
+    <div class="grid-item"></div>
+    <div class="grid-item">A</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+    <div class="grid-item">D</div>
+    <div class="grid-item">E</div>
+    <div class="grid-item">F</div>
+    <div class="grid-item">G</div>
+    <div class="grid-item">H</div>
+    <div class="grid-item">I</div>
+
+    <div class="grid-item">0</div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+
+    <div class="grid-item">0</div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+
+    <div class="grid-item">0</div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+
+    <div class="grid-item">0</div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+
+    <div class="grid-item">0</div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+    <div class="grid-item"><span class="dot"></span></div>
+  </div>
+
+  <div id='move_menu'>
+    <h3>Move a Stone</h3>
+    <h4>ROW</h4>
+    <select name="source_row" id="source_row">
+      <%for i in 0..4%>
+        <%= content_tag :option, i, :value => i%>
+      <%end%>
+    </select>
+    <h4>COLUMN</h4>
+    <select name="source_col" id="source_col">
+      <%for i in 'A'..'I'%>
+        <%= content_tag :option, i, :value => i%>
+      <%end%>
+    </select>
+    <p>To the Location</p>
+    <h4>ROW</h4>
+    <select name="dest_row" id="dest_row">
+      <%for i in 0..4%>
+        <%= content_tag :option, i, :value => i%>
+      <%end%>
+    </select>
+    <h4>COLUMN</h4>
+    <select name="dest_col" id="dest_col">
+      <%for i in 'A'..'I'%>
+        <%= content_tag :option, i, :value => i%>
+      <%end%>
+    </select>
+    <button type="button" id="move_button">
+      Make a move
+    </button>
+  </div>
+</div>
+<%= form_with url: matches_forfeit_url, method: :post do |form| %>
+  <div class ="sub_div">
+    <%= form.submit "Forfeit Match", :class=>"submit_btn"%>
+  </div>
+<%end%>
+

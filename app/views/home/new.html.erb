@@ -1,0 +1,25 @@
+<h1>Lets Play a Game of Fanarona</h1>
+
+<div id="signpgdiv">
+  <div class="chnge_pg_div">
+    <label class="chnge_pg_txt">Need an account?
+      <%= button_to "Sign Up", users_new_path, method: :get, :class=>"chnge_pg_btn" %>
+    </label>
+  </div>
+  <h2>Sign In!</h2>
+  <div id="form_cntner">
+    <%= form_with url: sessions_create_url, method: :post do |form| %>
+      <div>
+        <%= form.label "Email"%><br>
+        <%= form.text_field :email, :class=>"form_input" %><br>
+      </div>
+      <div>
+        <%= form.label "Password" %><br>
+        <%= form.password_field :password, :class=>"form_input"%><br>
+      </div>
+      <div class ="sub_div">
+        <%= form.submit "Sign In", :class=>"submit_btn"%><br>
+      </div>
+    <%end%>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  white_player: 1
+  black_player: 1
+  board_id: 1
+  current_player: 1
+  match_started: false
+  winning_colour: 1
+
+two:
+  white_player: 1
+  black_player: 1
+  board_id: 1
+  current_player: 1
+  match_started: false
+  winning_colour: 1

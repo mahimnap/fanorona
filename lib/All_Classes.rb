@@ -1,0 +1,8 @@
+require_relative 'Stone.rb'
+require_relative 'Location.rb'
+require_relative 'Board.rb'
+require_relative 'Player.rb'
+require_relative 'Move.rb'
+require_relative 'Enumerations.rb'
+require_relative 'MoveValidator.rb'
+require_relative 'Match.rb'

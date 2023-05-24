@@ -1,0 +1,35 @@
+<h1>Sign-Up Page</h1>
+
+<div id="signpgdiv">
+
+  <div class="chnge_pg_div">
+    <label class="chnge_pg_txt">Already have account?
+      <%= button_to "Sign In", root_url, method: :get, :class=>"chnge_pg_btn" %>
+    </label>
+  </div>
+  <h2>Sign Up!</h2>
+  <div id="form_cntner">
+    <%= form_with url: users_create_url, method: :post do |form| %>
+      <div>
+        <%= form.label "Username"%><br>
+        <%= form.text_field :username, :class=>"form_input"%>
+      </div>
+      <div>
+        <%= form.label "Email"%><br>
+        <%= form.text_field :email, :class=>"form_input"%>
+      </div>
+      <div>
+        <%= form.label "Password" %><br>
+        <%= form.password_field :password, :class=>"form_input"%>
+      </div>
+      <div>
+        <%= form.label "Confirm Password" %><br>
+        <%= form.password_field :confirm_password, :class=>"form_input"%>
+      </div>
+      <div class ="sub_div">
+        <%= form.submit "Sign Up", :class=>"submit_btn"%><br>
+      </div>
+    <%end%>
+  </div>
+</div>
+

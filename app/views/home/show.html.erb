@@ -1,0 +1,18 @@
+<h1>Welcome to your fanarona account!</h1>
+
+<div>
+  <h3>
+    Username: <%=@username%> <br>
+    Email: <%=@email%>
+  </h3>
+  <%= form_with url: matches_create_url, method: :post do |form| %>
+    <%= form.submit "Create Game" %>
+  <%end%>
+  <%= link_to "Join Game", matches_find_url %>
+
+  <%= form_with url: sessions_destroy_url, method: :post do |form| %>
+    <div>
+      <%= form.submit "Sign Out" %>
+    </div>
+  <%end%>
+</div>

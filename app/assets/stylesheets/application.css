@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+h1 {
+    text-align:center; 
+    font-size: 6vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+#signpgdiv {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(117, 108, 108, 0.705);
+    margin: auto;
+    width: 400pt;
+    max-height: max-content;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1vh;
+}
+
+.chnge_pg_div {
+    text-align: center;
+    align-self: flex-end;
+    max-width: fit-content;
+    max-height: min-content;
+    column-gap: 0;
+}
+
+.chnge_pg_txt {
+    color: grey; 
+}
+
+.chnge_pg_btn {
+    border-radius: 25px;
+    border: 1vh; 
+    background: rgb(129, 98, 63);
+    color: rgb(255, 255, 255);
+    max-width: fit-content;
+    max-height:fit-content;
+}
+
+.chnge_pg_btn:hover {
+    outline: none;
+    border-color: rgb(117, 98, 189);
+    box-shadow: 0 0 10px rgb(117, 98, 189);
+}
+
+#form_cntner {
+    text-align: center;
+    align-self: center; 
+    font-size:3vw;
+    width: 100%;
+    height: 100%
+}
+
+form {
+    font-size:2vw;
+    width: 100%;
+}
+
+.form_input {
+    border: 2px solid #dadada;
+    border-radius: 4px;
+    width: 80%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.form_input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.submit_btn {
+    width: 80%;
+    height: 20%;
+    background-color:rgb(117, 98, 189);
+    color: white;
+    font-size: 3vh;
+    padding-bottom: 1vh;
+}
+
+.submit_btn:hover {
+    outline: none;
+    border-color: rgb(117, 98, 189);
+    box-shadow: 0 0 10px rgb(117, 98, 189);
+}
+
+#gamepg {
+    display: flex; 
+    flex-direction: row;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(117, 108, 108, 0.705);
+    margin: auto;
+    width: 100%;
+    max-height: max-content;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#move_menu {
+    float: right; 
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(117, 108, 108, 0.705);
+    margin: auto;
+    width: 50%;
+    max-height: max-content;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 1vh;
+}
+
+/* NOTE: COLOR WILL NEED TO BE CHANGED BASED ON BOARD REFRESH RESULTS */
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: white; 
+    border-radius: 50%;
+    display: inline-block;
+  }
